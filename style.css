@@ -12,7 +12,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #26c2f6;
+  background: rgb(159, 226, 252);
   overflow: hidden;
 }
 
@@ -45,6 +45,7 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   padding-left: 32px;
+  
 }
 
 .search-box input::placeholder {

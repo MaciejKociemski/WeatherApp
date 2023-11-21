@@ -1,12 +1,22 @@
-const container = document.querySelector('.container');
-const search = document.querySelector('.search-box button');
-const weatherBox = document.querySelector('.weather-box');
-const weatherDetails = document.querySelector('.weather-details');
-const error404 = document.querySelector('.not-found');
+const container = document.querySelector(".container");
+const search = document.querySelector(".search-box button");
+const weatherBox = document.querySelector(".weather-box");
+const weatherDetails = document.querySelector(".weather-details");
+const error404 = document.querySelector(".not-found");
+const cityInput = document.querySelector(".search-box input");
 
-search.addEventListener("click", () => {
+// Obsługa kliknięcia przycisku
+search.addEventListener("click", searchWeather);
+
+// Obsługa wciśnięcia klawisza Enter w polu input
+cityInput.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    searchWeather();
+  }
+});
+
+function searchWeather() {
   const APIKey = "f25fadb74fdd6a514ad7d435ffab394c";
-  const cityInput = document.querySelector(".search-box input");
   const city = cityInput.value.trim(); // Usunięcie białych znaków z początku i końca
 
   console.log(city);
@@ -76,4 +86,4 @@ search.addEventListener("click", () => {
     .catch((error) => {
       console.error("Error:", error);
     });
-});
+}
