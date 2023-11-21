@@ -80,8 +80,12 @@ body {
 }
 
 .weather-box img {
+  border: none;
+  border-radius: 18px;
+  opacity: 60%;
   width: 60%;
   margin-top: 30px;
+  
 }
 
 .weather-box .temperature {
