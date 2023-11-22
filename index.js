@@ -5,10 +5,8 @@ const weatherDetails = document.querySelector(".weather-details");
 const error404 = document.querySelector(".not-found");
 const cityInput = document.querySelector(".search-box input");
 
-// Obsługa kliknięcia przycisku
 search.addEventListener("click", searchWeather);
 
-// Obsługa wciśnięcia klawisza Enter w polu input
 cityInput.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
     searchWeather();
@@ -17,7 +15,7 @@ cityInput.addEventListener("keyup", function (event) {
 
 function searchWeather() {
   const APIKey = "f25fadb74fdd6a514ad7d435ffab394c";
-  const city = cityInput.value.trim(); // Usunięcie białych znaków z początku i końca
+  const city = cityInput.value.trim();
 
   console.log(city);
 
