@@ -58,7 +58,7 @@ function searchWeather() {
           break;
 
         case "Snow":
-          image.src = "../images/snow_anim.gif";
+          image.src = "images/snow_anim.gif";
           break;
 
         case "Clouds":
@@ -79,7 +79,7 @@ function searchWeather() {
       weatherDetails.style.display = "";
       weatherBox.classList.add("fadeIn");
       weatherDetails.classList.add("fadeIn");
-      container.style.height = "590px";
+      container.style.height = "500px";
     })
     .catch((error) => {
       console.error("Error:", error);
