@@ -112,10 +112,11 @@ body {
 }
 
 .weather-box .description {
-  color: #06283d;
+  margin-top: 10px;
+  color: #0b4f79;
   text-transform: capitalize;
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .weather-details {
@@ -209,4 +210,8 @@ body {
     /* padding: 10px; */
     font-size: 12px;
     color: #000;
+}
+
+.temperature-min, .temperature-max{
+  font-size: 12px;
 }

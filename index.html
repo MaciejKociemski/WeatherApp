@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="search-box">
-            <i class="fa-solid fa-location-dot fa-shake fa-2xs"></i>
-            <input type="text" placeholder="Enter location">
-            <button class="fa-solid fa-magnifying-glass" id="searchButton"></button>
-        </div>
-        <div class="not-found">
-            <img src="images/searcherror.png" alt="404 not found error" >
-            <p>Invalid location, try again</p>
-        </div>
-        <div class="weather-box">
-            <img src="" alt="" class="src">
-            <p class="temperature"></p>
-            <p class="description"></p>
-        </div>
-<div class="weather-details">
-    <div class="humidity">
-        <i class="fa-solid fa-water fa-sharp" style="color: #7db8ca;"></i>
-        <div class="text">
+      <div class="search-box">
+        <i class="fa-solid fa-location-dot fa-shake fa-2xs"></i>
+        <input type="text" placeholder="Enter location" />
+        <button class="fa-solid fa-magnifying-glass" id="searchButton"></button>
+      </div>
+      <div class="not-found">
+        <img src="images/searcherror.png" alt="404 not found error" />
+        <p>Invalid location, try again</p>
+      </div>
+      <div class="weather-box">
+        <img src="" alt="" class="src" />
+        <p class="temperature"></p>
+        <p class="temperature-min"></p>
+        <p class="temperature-max"></p>
+        <p class="description"></p>
+      </div>
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="fa-solid fa-water fa-sharp" style="color: #7db8ca"></i>
+          <div class="text">
             <span></span>
             <p>humidity</p>
+          </div>
         </div>
-    </div>
-    <div class="wind">
-        <i class="fa-solid fa-wind fa-fade"></i>
-        <div class="text">
+        <div class="wind">
+          <i class="fa-solid fa-wind fa-fade"></i>
+          <div class="text">
             <span></span>
             <p>wind speed</p>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
     </div>
     <footer class="footer">
-        <p>2023 Weather App</p>
+      <p>2023 Weather App</p>
     </footer>
-    
-    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymus"></script>
+
+    <script
+      src="https://kit.fontawesome.com/7c8801c017.js"
+      crossorigin="anonymus"
+    ></script>
     <script src="index.js"></script>
-   
-</body>
+  </body>
 </html>
