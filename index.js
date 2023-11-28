@@ -56,11 +56,11 @@ function searchWeather() {
 
       switch (json.weather[0].main) {
         case "Clear":
-          image.src = "images/clear.jpg";
+          image.src = "images/clear.png";
           break;
 
         case "Rain":
-          image.src = "images/rain_anim.gif";
+          image.src = "images/rain.png";
           break;
 
         case "Snow":
@@ -68,7 +68,7 @@ function searchWeather() {
           break;
 
         case "Clouds":
-          image.src = "images/cloud.jpg";
+          image.src = "images/cloud.png";
           break;
 
         case "Haze":
