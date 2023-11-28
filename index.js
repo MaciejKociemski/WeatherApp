@@ -42,8 +42,12 @@ function searchWeather() {
 
       const image = document.querySelector(".weather-box img");
       const temperature = document.querySelector(".weather-box .temperature");
-      const temperatureMin = document.querySelector(".weather-box .temperature-min");
-      const temperatureMax = document.querySelector(".weather-box .temperature-max");
+      const temperatureMin = document.querySelector(
+        ".weather-box .temperature-min"
+      );
+      const temperatureMax = document.querySelector(
+        ".weather-box .temperature-max"
+      );
       const description = document.querySelector(".weather-box .description");
       const humidity = document.querySelector(
         ".weather-details .humidity span"
@@ -74,8 +78,12 @@ function searchWeather() {
           image.src = "";
       }
       temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
-      temperatureMin.innerHTML = `${parseInt(json.main.temp_min)}<span>°C (min)</span>`;
-      temperatureMax.innerHTML = `${parseInt(json.main.temp_max)}<span>°C (max)</span>`;
+      temperatureMin.innerHTML = `${parseInt(
+        json.main.temp_min
+      )}<span>°C (min)</span>`;
+      temperatureMax.innerHTML = `${parseInt(
+        json.main.temp_max
+      )}<span>°C (max)</span>`;
       description.innerHTML = `${json.weather[0].description}`;
       humidity.innerHTML = `${json.main.humidity}%`;
       wind.innerHTML = `${parseInt(json.wind.speed)}km/h`;
