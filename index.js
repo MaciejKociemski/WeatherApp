@@ -64,7 +64,7 @@ function searchWeather() {
           break;
 
         case "Snow":
-          image.src = "images/snow_anim.gif";
+          image.src = "images/snow.jpg";
           break;
 
         case "Clouds":
